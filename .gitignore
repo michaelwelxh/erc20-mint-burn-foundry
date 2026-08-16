@@ -1,1 +1,5 @@
 .env
+/.vs
+/lib
+/out
+/cache
