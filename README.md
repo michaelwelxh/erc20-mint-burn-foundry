@@ -145,3 +145,17 @@ Transaction hash: 0x6730f0b0765e3e98f40c58d719a560329149c3bcd1ff44b9e55b6d66f0bf
   forge create --help
   forge inspect modelToken abi
 ```
+usefull linkes
+
+```text
+syntax 
+https://cryptozombies.io/
+
+openzeppelin lib 
+https://docs.openzeppelin.com/contracts/4.x/erc20
+https://docs.openzeppelin.com/contracts/5.x/api/token/erc20
+
+https://www.getfoundry.sh/anvil
+https://getfoundry.sh/reference/cheatcodes/prank
+https://www.getfoundry.sh/reference/cheatcodes/expect-revert
+```
