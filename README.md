@@ -15,4 +15,9 @@ nano remappings.txt
 forge clean
 forge build
 forge test
+forge test 
+    --match-test <test function name>
+    -vvvv
 ```
+testing notes
+- foudary only treats function names with the prefix test as tests
