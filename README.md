@@ -21,3 +21,46 @@ forge test
 ```
 testing notes
 - foudary only treats function names with the prefix test as tests
+
+## anvil 
+
+https://www.getfoundry.sh/anvil
+
+```text 
+Anvil is a fast local Ethereum node for development and testing. It runs entirely in-memory and supports forking from any EVM-compatible chain.
+```
+
+## Common workflows
+
+start local node
+```bash
+anvil
+```
+or for custom accounts 
+```bash 
+anvil --accounts 20
+```
+
+fork mainnet
+```bash 
+anvil --fork-url https://ethereum.reth.rs/rpc
+```
+
+fork a block 
+```bash 
+anvil --fork-url https://ethereum.reth.rs/rpc --fork-block-number 18000000
+```
+
+Auto impersonate
+```bash 
+anvil --auto-impersonate
+```
+
+Default accounts
+Anvil generates 10 development accounts with 10,000 ETH each. The default mnemonic is:
+```bash
+test test test test test test test test test test test junk
+```
+You can customize accounts with --accounts, --balance, and --mnemonic.
+
+Default Anvil accounts are publicly known. Use a custom mnemonic when forking mainnet or interacting with public RPC providers.
